@@ -1,0 +1,18 @@
+    .filter{
+        padding-bottom: 50px;
+        padding-top: 94px; 
+    
+    &__list{
+        display: flex;
+        justify-content: center; }
+    }
+
+
+    .filter__item{
+        display: inline-block;
+        margin-right: 8px; 
+    
+    
+    &:last-child{margin-right: 0;} 
+    }
+

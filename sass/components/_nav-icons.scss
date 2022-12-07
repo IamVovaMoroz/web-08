@@ -1,0 +1,32 @@
+
+
+.auth{
+
+    &__link, &-phone__link{
+        display: flex; 
+        align-items: center;}
+    
+        
+    &-phone__link:hover .icon-phone {fill:var(--button-text-colour);}
+    
+    &__link:hover .icon-email {fill:var(--button-text-colour);}
+    }
+
+
+.icon{
+
+        &-email, &-phone{
+            margin-right: 10px;
+             fill:var(--article-text-colour);
+             transition-property: all; 
+             transition-duration: 250ms;
+             transition-timing-function: 
+             cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        }
+
+
+
+
+
+

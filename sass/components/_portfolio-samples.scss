@@ -1,0 +1,95 @@
+.samples {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;}
+   
+    .samples__item{
+        display: inline-block;
+        margin-right: 30px; 
+        margin-bottom: 30px;
+        transition-property: all; 
+        transition-duration: 250ms;
+        transition-timing-function: 
+        cubic-bezier(0.4, 0, 0.2, 1);
+    
+       
+    &:nth-child(3n){margin-right: 0;}
+    
+    &:nth-child(n + 7) {margin-bottom: 0;}
+    }
+
+
+
+.samples__item{
+   
+    &:hover{
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+ &{box-sizing: border-box; margin-right: 28px; }
+    
+    
+ }
+
+
+ .samples{
+
+    &__title{
+        color: var(--main-text-colour);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2; 
+        margin: 0;  
+       }
+    
+       &__text{
+         color: var(--article-text-colour);
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 1.88;  
+         margin: 0; 
+       }
+    }
+
+
+
+
+   .samples__blocks{
+    width: 370px;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 24px;
+    border: 1px solid var(--filter-border-colour);
+      }
+//    .samples__blocks{border: 1px solid var(--filter-border-colour);}
+
+
+//    Ховер на портфолио
+
+
+
+.rekurs{ 
+    position: relative; 
+    overflow: hidden; 
+  } 
+  .overlay { 
+    position: absolute; 
+    width: 370px; 
+    height: 294px; 
+    padding-left: 24px; 
+    padding-right: 24px; 
+    display: flex; 
+    color:  var(--second-text-colour); 
+    font-size: 18px; 
+    line-height: 1.55; 
+    letter-spacing: 0.54px; 
+    background-color: rgba(33, 150, 243, 0.9); 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  } 
+   
+  .samples li:focus .overlay, 
+  .samples li:hover .overlay { 
+      transform: translateY(-100%); 
+  } 
+   
+  .overlay p { 
+      margin: auto; 
+  }
