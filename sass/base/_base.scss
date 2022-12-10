@@ -3,7 +3,30 @@ html{box-sizing: border-box;}
 *, *::before, *::after{box-sizing: inherit;}
 
 
-.adflex{display: flex;}
+.adflex{
+    display: flex;
+    //flex for section team 0-479 >
+
+    @media screen and(max-width:479px) {display: block;}
+       
+
+//flex for section team 480 >
+    @media screen and (min-width: 480px) {display: block;}
+
+ //flex for section team 780 >
+ @media screen and (min-width: 768px) {display: flex; flex-wrap: wrap;}  
+ 
+ //flex for section team 1200 >
+ @media screen and (min-width: 1200px) {display: flex;}
+
+}
+
+
+ 
+ 
+
+
+
 
 a{ 
     text-decoration: none; 
