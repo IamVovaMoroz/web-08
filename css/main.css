@@ -783,8 +783,8 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .clients__list {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 90px) / 2);
+        flex-basis: calc((100% - 90px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
