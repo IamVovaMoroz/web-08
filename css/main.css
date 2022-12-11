@@ -746,18 +746,18 @@ body {
   fill: var(--second-text-colour);
 }
 
-.clients {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 .clients__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   margin: 0;
-  padding-top: 60px;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .clients__title {
+    padding-top: 60px;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
@@ -770,10 +770,38 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  padding-bottom: 94px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .clients__list {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clients__list {
+    -ms-flex-preferred-size: calc((100% - 90px) / 2);
+        flex-basis: calc((100% - 90px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__list {
+    -ms-flex-preferred-size: calc((100% - 120px) / 3);
+        flex-basis: calc((100% - 120px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-bottom: 34px;
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
@@ -791,7 +819,6 @@ body {
 }
 
 .clients__item {
-  padding: 16px 32px;
   border: 1px solid var(--clients-border-colour);
   border-radius: 4px;
   -webkit-transition-property: all;
@@ -801,8 +828,18 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 1199px) {
+  .clients__item {
+    padding: 16px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+  }
 }
 
 .clients__item .clients__link:hover .clients__icon {
