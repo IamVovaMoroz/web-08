@@ -24,14 +24,14 @@
                 &__list{
                       display: flex;
                       list-style: none;
-                      justify-content: center;
+                    //   justify-content: center;
                       gap: 30px;
                       flex-wrap:wrap;
                       
                      
                       @media screen and (max-width: 1199px) { padding-bottom: 60px;  }
                       @media screen and (max-width: 768px) {flex-basis: calc((100% - 1 * 30px) / 2);}
-                      @media screen and (min-width: 768px) {flex-basis: calc((100% - 2 * 30px) / 3);}
+                      @media screen and (min-width: 768px) {flex-basis: calc((100% - 2 * 30px) / 3); justify-content: center;}
                       @media screen and (min-width: 1200px) {flex-wrap:nowrap; padding-bottom: 34px;  flex-basis: calc((100% - 150px) / 6);}
                      
                     }
@@ -67,7 +67,11 @@
           cubic-bezier(0.4, 0, 0.2, 1);
       
 
-          @media screen and (max-width: 1199px){
+          @media screen and (max-width: 767px){
+            padding: 16px 51px;
+         }
+
+         @media screen and (min-width: 768px){
             padding: 16px 60px;
          }
 
