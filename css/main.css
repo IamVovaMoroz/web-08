@@ -594,6 +594,11 @@ body {
 .about {
   padding-bottom: 94px;
 }
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 .about__title {
   font-weight: 700;
   font-size: 36px;
