@@ -17,14 +17,19 @@
             list-style: none; 
             justify-content: center; 
             flex-wrap: wrap;
-          
+
+        
          @media screen and(min-width:1200px) {
             flex-wrap: nowrap;
          }
+
+
         }
+
+       
+
         
-        
-        
+      
         
         &__block{
               
@@ -78,6 +83,13 @@
                 width: 354px;
             }
             // width: 270px;
+
+            @media screen and (min-width:768px) {
+                &:nth-child(2n + 1){margin-right: 30px;}
+                
+            
+                
+             } 
     
             @media screen and (min-width:1200px) {
                 &:not(:last-child) {margin-right: 30px;  
