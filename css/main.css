@@ -1114,9 +1114,23 @@ body {
   color: var(--second-text-colour);
 }
 
-.filter {
-  padding-bottom: 50px;
-  padding-top: 94px;
+@media screen and (max-width: 1199px) {
+  .filter {
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    padding-bottom: 50px;
+    padding-top: 94px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 .filter__list {
   display: -webkit-box;

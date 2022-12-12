@@ -1,10 +1,29 @@
     .filter{
+
+
+        @media screen and (max-width:1199px) {
+        padding-bottom: 30px;
+        padding-top: 60px;
+            
+        }
+        @media screen and (min-width:1200px) {
         padding-bottom: 50px;
-        padding-top: 94px; 
+        padding-top: 94px;
+        }
+        
+
+
+        @media screen and(max-width:767px) {
+            flex-wrap: wrap;
+           
+        } 
     
+
     &__list{
         display: flex;
         justify-content: center; }
+
+
     }
 
 
