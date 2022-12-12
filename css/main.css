@@ -391,9 +391,9 @@ body {
     width: 450px;
   }
 }
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
   .features__item {
-    min-width: 354px;
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
