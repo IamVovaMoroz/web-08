@@ -18,6 +18,9 @@
     
     <header class="site-header">
       <div class="container main-menu">
+
+        
+
             <nav>
       
         <ul class="navigat">
@@ -35,7 +38,15 @@
         
         </ul>
       </nav> 
+    <!-- Кнопка для мобильной версии закрытия -->
+    <button
+    class="menu-toggle js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu"
+  >
     
+    <svg class="button-mobile" width="40" height="40"><use href="./img/sprite-icon.svg#button-mobile"></use></svg>
+  </button>
      
         <ul class="auth">
         <li class="auth__item ">
@@ -58,11 +69,11 @@
     <main>
       <!-- Роздiл герой -->
       
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
         <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
         <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-      </section> 
+      </section>  -->
     
 
       <!-- Роздiл Наші переваги features-->
@@ -100,7 +111,7 @@
           <!--Модалка Overlay backdrop серый фон-->
 
        
-        <div class="backdrop is-hidden" data-modal>
+        <!-- <div class="backdrop is-hidden" data-modal>
 
                   
           
@@ -110,11 +121,11 @@
             <svg class="close-icon" height="30" width="30" ;>
               <use href="./img/close-form.svg#icon-close"></use></svg>
            
-      </button> 
+      </button>  -->
 
       <!-- Форма в модалке -->
 
-      <form name="modal-form">
+      <!-- <form name="modal-form">
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
         
 
@@ -147,11 +158,11 @@
       </div>
 
         <label for="user-comments" class="label__data">Коментар</label>
-       <textarea name="user-comments" id="user-comments"  rows="10" class="modal__textarea"  placeholder="Введiть текст"></textarea> 
+       <textarea name="user-comments" id="user-comments"  rows="10" class="modal__textarea"  placeholder="Введiть текст"></textarea>  -->
       
        <!-- Чекбокс подтверждение -->
 
-        <div class="checkbox check-field"> 
+        <!-- <div class="checkbox check-field"> 
         <input 
           class="visually-hidden" 
           type="checkbox" 
@@ -180,7 +191,7 @@
         
     </div> 
      
-      </section>
+      </section> -->
     
       <!-- Роздiл Чим ми займаємося. -->
       
@@ -472,6 +483,46 @@
       
                 
     </footer> -->
+   <!-- Mobile menu  -->
+   <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+     
+      <svg class="button-mobile" width="40" height="40"><use href="./img/sprite-icon.svg#button-mobile-close"></use></svg>
+
+     
+
+
+    </button>
+
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--color" href="" >Студія</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Портфоліо</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Контакти</a></li>
+    </ul>
+     
+    <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--color" href="" >+38 096 111 11 11</a></li>
+        <li class="mobile-contacts__item"><a class="mobile-contacts__link " href="">info@devstudio.com</a></li>
+    </ul>
+
+    <ul class="mobile-socials">
+      <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Instagram</a></li>
+      <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Twitter</a></li>
+      <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Facebook</a></li>
+      <li class="mobile-socials__item"><a class="mobile-socials__link " href="">LinkedIn</a></li>
+    </ul>
+
+
+  </div>
+ 
+
     <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
