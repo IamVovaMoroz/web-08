@@ -8,8 +8,16 @@
         line-height: 1.36;
         text-decoration: none;
         display: block;
-        margin-right: 93px;
+        
         color:var(--main-text-colour);
+
+        @media screen and (min-width:768px) {
+            margin-right: 88px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-right: 93px;
+            
+        }
     }
     &__icon{
     color:var(--button-text-colour);}

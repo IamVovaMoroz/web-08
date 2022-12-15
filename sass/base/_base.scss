@@ -59,12 +59,20 @@ body { background-color: var(--second-text-colour);
     
         &::after {
             position: absolute;
-            bottom: -35px;
+            
             right: 0;
             content: "";
             width: 100%;
             height: 4px;
             background-color: var(--button-text-colour);
-            border-radius: 2px;} 
-        
+            border-radius: 2px;
+            @media screen and (min-width:768px) {
+                bottom: -43px;
+            }
+            @media screen and (min-width:1200px) {
+                bottom: -35px;
+            }
+        } 
+            
+            
          }

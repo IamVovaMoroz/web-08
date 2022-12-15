@@ -43,8 +43,7 @@
       display: none;
     }
   }
-  
-
+ 
 
 
 //   .menu-toggle:hover,
@@ -124,10 +123,13 @@
 
   .mobile-socials{
     display: flex;
-    gap: 20px;
+    
+    gap: 10px;
     text-decoration: none;
+    
+    
     &__link{
-
+        
     color: #2196F3;
     font-weight: 500;
     font-size: 18px;
@@ -137,3 +139,11 @@
   }
 
   .button-mobile:hover, .button-mobile:focus{fill: #2196F3;;}
+
+  .line{border: 1px solid rgba(33, 33, 33, 0.2);
+margin-left: 10px;
+display: inline-block;
+align-items: center;
+
+}
+
