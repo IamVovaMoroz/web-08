@@ -21,7 +21,22 @@ html{box-sizing: border-box;}
 
 }
 
+.adflex-footer{
+    @media screen and(max-width:479px) {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
 
+    @media screen and (min-width: 768px) {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        @media screen and (min-width: 1200px) {display: flex;}
+}
 
  
 

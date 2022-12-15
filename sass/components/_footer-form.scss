@@ -1,12 +1,24 @@
 
     .footer-subscibe{ 
-        margin-left: 110px; 
+        @media screen and (max-width:1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @media screen and(min-width:1200px) {
+            margin-left: 110px; 
+        }
+        
    &__title{color: var(--second-text-colour); 
        margin: 0;
        margin-bottom: 20px; 
        font-size: 14px;
        line-height: 1.14; 
-       padding-top: 12px;}
+       @media screen and(max-width:1199px) {margin-top: 60px;}
+       @media screen and(min-width:1200px) {padding-top: 12px;}
+       
+    }
    
       &__input{
            height: 50px;
@@ -19,7 +31,16 @@
            padding-top: 15px;
            padding-bottom: 15px;
            color: rgba(255, 255, 255, 0.6);
-           margin-right: 10px;
+           
+           @media screen and(max-width:1199px) {margin-bottom: 20px;}
+           @media screen and(min-width:1200px) {margin-right: 10px;}
+           
         
        }
+   }
+   .footer-subscibe__form{
+@media screen and (max-width:1199px) {
+   width: 450px;
+}
+
    }
