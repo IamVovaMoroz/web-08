@@ -422,7 +422,7 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-min.jpg);
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-min.jpg);
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 479px) {
   .hero {
     max-width: 480px;
     min-height: 400px;
@@ -430,7 +430,7 @@ body {
     padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 577px) {
+@media screen and (min-width: 480px) {
   .hero {
     max-width: 768px;
     min-height: 400px;
@@ -438,7 +438,7 @@ body {
     padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     min-height: 600px;
@@ -448,14 +448,24 @@ body {
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--second-text-colour);
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -580,8 +590,6 @@ body {
 
 .modal {
   position: relative;
-  width: 528px;
-  height: 581px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -592,13 +600,36 @@ body {
   padding: 40px;
   background-color: var(--second-text-colour);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal__title {
   color: var(--main-text-colour);
-  font-size: 20px;
-  line-height: 23px;
+  margin: 0;
   line-height: 0.05;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }
 
 .modal-form__input {
@@ -642,7 +673,6 @@ body {
 }
 
 .modal__textarea {
-  width: 448px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   color: rgba(117, 117, 117, 0.5);
@@ -652,6 +682,17 @@ body {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  resize: none;
+}
+@media screen and (max-width: 1199px) {
+  .modal__textarea {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    width: 448px;
+  }
 }
 .modal__textarea:focus {
   border: 1px solid rgb(33, 150, 243);
@@ -660,12 +701,35 @@ body {
   transition: border 250ms cubic-bezier(33, 150, 243, 1);
 }
 
+@media screen and (max-width: 1199px) {
+  .agree-text {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .agree-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 .agree-link {
   text-decoration: underline;
   color: rgb(33, 150, 243);
-  font-size: 14px;
-  line-height: 1.7;
   margin-left: 5px;
+}
+@media screen and (max-width: 1199px) {
+  .agree-link {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .agree-link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .input-line-agree {
@@ -767,8 +831,9 @@ body {
   border-radius: 4px;
   border: none;
   margin: 0;
-  margin-left: 125px;
   margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .about {

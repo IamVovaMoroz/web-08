@@ -18,27 +18,27 @@
          rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
 
 
-        //  До width 576px! картинка 480px  
+        //  До width 480px! картинка 479px  
        
-         @media screen and (max-width:576px) {
+         @media screen and (max-width:479px) {
             max-width: 480px;
             min-height: 400px;
             padding-top: 118px;
             padding-bottom: 118px;
          }
 
-         //  От width 577px картинка 768px 
+         //  От width 480px картинка 768px 
 
-         @media screen and (min-width:577px) {
+         @media screen and (min-width:480px) {
             max-width: 768px;
             min-height: 400px;
             padding-top: 118px;
             padding-bottom: 118px;
          }
         
-         //  От width 960px картинка 1200px
+         //  От width 1200px картинка 1200px
                 
-         @media screen and (min-width:960px) {
+         @media screen and (min-width:1200px) {
          max-width: 1600px;
          min-height: 600px;
          padding-top: 200px;
@@ -48,14 +48,24 @@
        
     &__title{ 
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+       
         text-align: center; 
         letter-spacing: 0.06em;
         margin-top: 0; 
         margin-bottom: 0;
         color: var(--second-text-colour);
-        margin-bottom: 30px; }
+        margin-bottom: 30px; 
+
+    @media screen and (max-width:1199px) {
+        font-size: 26px;
+        line-height: 1.61;  
+     }   
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+        
+    }
     }
 
 
