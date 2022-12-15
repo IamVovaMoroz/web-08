@@ -7,7 +7,7 @@
     display: inline-block;
     color: var(--second-text-colour);
     @media screen and (max-width:767px) {
-        
+        // padding-left: 39px;
     }
     }
 
@@ -43,7 +43,7 @@
 
 .site-footer__contacts{
     @media screen and (max-width:767px) {
-        padding-left: 124px;
-        align-items: center;
+        // padding-left: 109px;
+        
     }
 }
