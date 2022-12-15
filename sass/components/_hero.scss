@@ -5,8 +5,7 @@
 
     .hero{
         text-align: center; 
-         padding-top: 200px;
-         padding-bottom: 200px;
+         
          background-color: var(--secondary-background-colour);
          max-width: 1600px;
          min-height: 600px;
@@ -17,7 +16,34 @@
          margin-right: auto;
          background: linear-gradient(to right, rgba(47,48,58,0.4),
          rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
+
+
+        //  До width 576px! картинка 480px  
+       
+         @media screen and (max-width:576px) {
+            max-width: 480px;
+            min-height: 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+         }
+
+         //  От width 577px картинка 768px 
+
+         @media screen and (min-width:577px) {
+            max-width: 768px;
+            min-height: 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+         }
         
+         //  От width 960px картинка 1200px
+                
+         @media screen and (min-width:960px) {
+         max-width: 1600px;
+         min-height: 600px;
+         padding-top: 200px;
+         padding-bottom: 200px;
+         }
     
        
     &__title{ 

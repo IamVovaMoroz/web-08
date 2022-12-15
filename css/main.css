@@ -411,8 +411,6 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: var(--secondary-background-colour);
   max-width: 1600px;
   min-height: 600px;
@@ -423,6 +421,30 @@ body {
   margin-right: auto;
   background: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-min.jpg);
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-min.jpg);
+}
+@media screen and (max-width: 576px) {
+  .hero {
+    max-width: 480px;
+    min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 577px) {
+  .hero {
+    max-width: 768px;
+    min-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .hero {
+    max-width: 1600px;
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero__title {
   font-weight: 900;
