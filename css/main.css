@@ -1043,6 +1043,12 @@ body {
   display: inline-block;
   color: var(--second-text-colour);
 }
+@media screen and (max-width: 767px) {
+  .foot-link {
+    padding-left: 39px;
+  }
+}
+
 .site-footer {
   background-color: var(--secondary-background-colour);
   padding-top: 60px;
@@ -1071,6 +1077,12 @@ body {
 }
 .site-footer__link--color {
   color: var(--second-text-colour);
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer__contacts {
+    padding-left: 109px;
+  }
 }
 
 .foot-social {
