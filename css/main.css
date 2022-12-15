@@ -1043,7 +1043,6 @@ body {
   display: inline-block;
   color: var(--second-text-colour);
 }
-
 .site-footer {
   background-color: var(--secondary-background-colour);
   padding-top: 60px;
@@ -1072,6 +1071,15 @@ body {
 }
 .site-footer__link--color {
   color: var(--second-text-colour);
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer__contacts {
+    padding-left: 124px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .foot-social {
