@@ -1003,7 +1003,7 @@ body {
     height: 460px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .team .team__images {
     width: 354px;
     height: 374px;
