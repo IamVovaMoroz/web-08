@@ -335,9 +335,9 @@
 </main> 
  <!-- Підвал сайту -->
 
- <!-- <footer class="site-footer">
+ <footer class="site-footer">
   <div class="container">
-    <div class="adflex">
+    <div class="adflex-footer">
     <div class="site-footer__contacts">
   <a href="#" class="foot-link" lang="en"><span class="site-footer__logo">Web</span>Studio</a>
   
@@ -408,7 +408,48 @@
   </div>
   
             
-</footer> -->
+</footer>
+<!-- Mobile menu  -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+<button class="menu-toggle js-close-menu">
+ 
+  <svg class="button-mobile" width="40" height="40"><use href="./img/sprite-icon.svg#button-mobile-close"></use></svg>
+
+ 
+
+
+</button>
+
+<ul class="mobile-menu">
+  <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--color" href="" >Студія</a></li>
+  <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Портфоліо</a></li>
+  <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Контакти</a></li>
+</ul>
+ 
+<ul class="mobile-contacts">
+    <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--color" href="" >+38 096 111 11 11</a></li>
+    <li class="mobile-contacts__item"><a class="mobile-contacts__link " href="">info@devstudio.com</a></li>
+</ul>
+
+<ul class="mobile-socials">
+  <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Instagram</a><span><svg class="line" width="0" height="22"><use href="./img/sprite-icon.svg#line"></use></svg></span></li>
+  <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Twitter</a><span><svg class="line" width="0" height="22"><use href="./img/sprite-icon.svg#line"></use></svg></span></li>
+  <li class="mobile-socials__item"><a class="mobile-socials__link " href="">Facebook</a><span><svg class="line" width="0" height="22"><use href="./img/sprite-icon.svg#line"></use></svg></span></li>
+  <li class="mobile-socials__item"><a class="mobile-socials__link " href="">LinkedIn</a><span><svg class="line" width="0" height="22"><use href="./img/sprite-icon.svg#line"></use></svg></span></li>
+</ul>
+
+
+</div>
+
+
+
+<script
+defer
+src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
   
 </body>
 </html>

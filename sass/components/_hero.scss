@@ -5,44 +5,84 @@
 
     .hero{
         text-align: center; 
-         
          background-color: var(--secondary-background-colour);
          max-width: 1600px;
          min-height: 600px;
-         background-repeat: no-repeat;
-         background-position: center;
-         background-size: cover;
          margin-left: auto;
          margin-right: auto;
-         background: linear-gradient(to right, rgba(47,48,58,0.4),
-         rgba(47,48,58,0.4)),url(../img/hero-min.jpg);  
-
-
-        //  До width 480px! картинка 479px  
+        
+         
        
-         @media screen and (max-width:479px) {
-            max-width: 480px;
+
+        //  До width 767px! картинка 479px  
+       
+         @media screen and (max-width:767px) {
+            max-width: 767px;
             min-height: 400px;
             padding-top: 118px;
             padding-bottom: 118px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+           rgba(47,48,58,0.4)),url(../img/hero/Img_mob@1x.jpg);  
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),url(../img/hero/Img_mob@2x.jpg);
+        }
+
          }
 
-         //  От width 480px картинка 768px 
+         //  width 768px-1199 картинка 768px 
 
-         @media screen and (min-width:480px) {
-            max-width: 768px;
+         @media screen and (min-width:768px) {
+            max-width: 1199px;
             min-height: 400px;
             padding-top: 118px;
             padding-bottom: 118px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+           rgba(47,48,58,0.4)),url(../img/hero/Img_tab@1x.jpg);  
+         
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),url(../img/hero/Img_tab@2x.jpg);
+        }
+
          }
         
-         //  От width 1200px картинка 1200px
+         //  width 1200px-1600px картинка 1200px
                 
          @media screen and (min-width:1200px) {
          max-width: 1600px;
          min-height: 600px;
          padding-top: 200px;
          padding-bottom: 200px;
+         
+         background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+           rgba(47,48,58,0.4)),url(../img/hero/Img_tab@1x.jpg);  
+         
+
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+            background-image: linear-gradient(to right, rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),url(../img/hero/Img_tab@2x.jpg);
+        }
+       
+         
          }
     
        
