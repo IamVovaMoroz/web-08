@@ -1100,7 +1100,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 27px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
