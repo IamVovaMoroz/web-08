@@ -1380,6 +1380,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1427,6 +1428,16 @@ body {
   }
 }
 @media screen and (min-width: 370px) {
+  .footer-subscibe__input {
+    width: 358px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer-subscibe__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer-subscibe__input {
     width: 358px;
   }
