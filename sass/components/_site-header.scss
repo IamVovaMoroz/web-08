@@ -55,10 +55,11 @@
     @media screen and (min-width:768px) {
         margin-left: auto;  
         &__item{
-            @media screen and (max-width:1199px) {
-                
+            @media screen and (min-width:1200px) {
+                margin-right: 50px;
             }
-            margin-right: 50px;}
+            // margin-right: 50px;
+        }
         &__link, &-phone__link{
             display: block;
             color:var(--article-text-colour);
@@ -153,11 +154,11 @@
         }  
     }
 
-.header-contact__link:last-child{
-@media screen and (max-width:1199px) {
-    margin-right: 80px;
-}
+// .header-contact__link:last-child{
+// @media screen and (max-width:1199px) {
+//     margin-right: 80px;
+// }
 
-}
+// }
 
 

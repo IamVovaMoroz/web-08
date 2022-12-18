@@ -7,11 +7,17 @@ html{box-sizing: border-box;}
     display: flex;
     //flex for section team 0-479 >
 
-    @media screen and(max-width:479px) {display: block;}
+    @media screen and(max-width:479px) {
+        // display: block;
+        
+        display: flex; flex-direction: column; align-items: center;
+    }
        
 
 //flex for section team 480 >
-    @media screen and (min-width: 480px) {display: block;}
+    @media screen and (min-width: 480px) {display: block;
+        // display: flex; flex-direction: column; align-items: center;
+    }
 
  //flex for section team 780 >
  @media screen and (min-width: 768px) {display: flex; flex-wrap: wrap;}  
