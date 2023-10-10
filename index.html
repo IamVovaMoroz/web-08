@@ -30,15 +30,15 @@
             >
           </li>
           
-          <li class="header__item"><a href="./index.html" class="header-studio__link current ">Студія</a></li>
+          <li class="header__item"><a href="./index.html" class="header-studio__link current ">Studio</a></li>
           <li class="header__item">
-            <a href="./portfolio.html" class="header-portfolio__link pointing">Портфоліо</a>
+            <a href="./portfolio.html" class="header-portfolio__link pointing">Portfolio</a>
           </li>
-          <li class="header__item"><a href="#" class="header-contact__link pointing">Контакти</a></li>
+          <li class="header__item"><a href="#" class="header-contact__link pointing">Contacts</a></li>
         
         </ul>
       </nav> 
-    <!-- Кнопка для мобильной версии закрытия -->
+    <!-- button close -->
     <button
     class="menu-toggle js-open-menu"
     aria-expanded="false"
@@ -67,16 +67,17 @@
     </header>
 
     <main>
-      <!-- Роздiл герой -->
+    
       
       <section class="hero">
         <div class="container">
-        <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
-        <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
-      </section> 
+            <h1 class="hero__title">Effective Solutions for <br> Your Business</h1>
+            <button type="button" class="hero__button" data-modal-open>Order Service</button>
+        </div>
+    </section>
     
 
-      <!-- Роздiл Наші переваги features-->
+      <!--  features-->
       
       <section class="features">
         
@@ -86,29 +87,27 @@
            
           <ul class="features__list">
           
-          <li class="features__item "><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-radar"></use></svg></div><h3 class="features__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="features__text">
-              Ідейні міркування, i навіть початок повсякденної роботи з формування
-              позиції.
-            </p></li>
-          <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-clock"></use></svg></div><h3 class="features__title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="features__text">
-              Завдання організації, особливо рамки i місце навчання кадрів тягне у
-              себе.
-            </p></li>
-          <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-laptop"></use></svg></div><h3 class="features__title">ПЛАНУВАННЯ</h3>
-            <p class="features__text">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p></li>
-          <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-astronaut"></use></svg></div><h3 class="features__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="features__text">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p></li>
+            <li class="features__item "><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-radar"></use></svg></div><h3 class="features__title">ATTENTION TO DETAILS</h3>
+              <p class="features__text">
+                  Conceptual thinking and even the beginning of everyday work on shaping a position.
+              </p></li>
+              <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-clock"></use></svg></div><h3 class="features__title">PUNCTUALITY</h3>
+              <p class="features__text">
+                  The organization's tasks, especially the framework and the place of personnel training, attract.
+              </p></li>
+              <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-laptop"></use></svg></div><h3 class="features__title">PLANNING</h3>
+              <p class="features__text">
+                  Similarly, consultation with a broad asset significantly determines.
+              </p></li>
+              <li class="features__item"><div class="features__block"><svg class="features__icon" height="70" width="70"><use href="./img/sprite-icon.svg#icon-astronaut"></use></svg></div><h3 class="features__title">MODERN TECHNOLOGIES</h3>
+              <p class="features__text">
+                  The significance of these issues is so obvious that the implementation of planned tasks.
+              </p></li>
+              
        
           </ul> 
        
-          <!--Модалка Overlay backdrop серый фон-->
+          <!--Overlay backdrop-->
 
        
         <div class="backdrop is-hidden" data-modal>
@@ -123,10 +122,10 @@
            
       </button> 
 
-      <!-- Форма в модалке -->
+      <!-- form -->
 
       <form name="modal-form">
-        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="modal__title">Leave your details, and we will call you back</h2>
         
 
         <label for="user-name" class="label__data">Ім'я</label>
@@ -139,7 +138,7 @@
       </svg>
     </div>
 
-        <label for="user-phone" class="label__data">Телефон</label>
+        <label for="user-phone" class="label__data">Phone</label>
 
         <div class="input-wraper">
         <input name="user-phone" id="user-phone" type="tel" class="modal-form__input">
@@ -148,7 +147,7 @@
         </svg>
       </div>
 
-        <label for="user-email" class="label__data">Пошта</label>
+        <label for="user-email" class="label__data">Email</label>
 
         <div class="input-wraper">
         <input name="user-email" id="user-email" type="email" class="modal-form__input">
@@ -157,10 +156,10 @@
         </svg>
       </div>
 
-        <label for="user-comments" class="label__data">Коментар</label>
-       <textarea name="user-comments" id="user-comments"  rows="10" class="modal__textarea"  placeholder="Введiть текст"></textarea> 
+        <label for="user-comments" class="label__data">Comments</label>
+       <textarea name="user-comments" id="user-comments"  rows="10" class="modal__textarea"  placeholder="Enter text"></textarea> 
       
-       <!-- Чекбокс подтверждение -->
+       <!-- checkbox -->
 
         <div class="checkbox check-field"> 
         <input 
@@ -174,14 +173,14 @@
           ><span class="checkbox-agree" 
             ><svg class="checkbox-svg" width="16px" height="15px"> 
               <use href="./img/galka.svg#icon-Vector"></use></svg></span 
-          ><span class="agree-text">Погоджуюся з розсилкою та приймаю</span> 
-          <a href="" class="agree-link"><span>Умови договору</span></a></label 
+          ><span class="agree-text">I agree to receive newsletters and accept</span> 
+          <a href="" class="agree-link"><span>Terms of Service</span></a></label 
         > 
       </div>
 
       
 
-      <button type="submit" class="button-send">Вiдправити</button>
+      <button type="submit" class="button-send">Send</button>
 
       </form> 
     </div>
@@ -193,11 +192,11 @@
      
       </section>
     
-      <!-- Роздiл Чим ми займаємося -->
+      <!-- What We Do -->
       
       <section class="about">
         <div class="container ">
-        <h2 class="about__title">Чим ми займаємося</h2>
+        <h2 class="about__title">What We Do</h2>
         <div class="adflex">
 
         <div class="about__img">
@@ -208,7 +207,7 @@
           width="370"
           height="294"/>
         <div class="about__overlay"></div>
-        <h2 class="about__description">ДЕСКТОПНI ДОДАТКИ</h2>
+        <h2 class="about__description">Desktop Applications</h2>
         </div>
         
         
@@ -217,7 +216,7 @@
         srcset="img/about/img_@1x-1.jpg 1x, img/about/img_@2x-1.jpg 2x "
         src="./img/img2a.jpg" alt="mobil-image" width="370" height="294" />
         <div class="about__overlay"></div>
-        <h2 class="about__description">МОБIЛЬНI ДОДАТКИ</h2>
+        <h2 class="about__description">Mobile Applications</h2>
       </div>
 
 
@@ -230,17 +229,17 @@
           height="294"
                   />
                   <div class="about__overlay"></div>
-                  <h2 class="about__description">ДИЗАЙНЕРСЬКI РIШЕННЯ</h2>       
+                  <h2 class="about__description">Design Solution</h2>       
       </div>
       </div>
       </div>
       </section>
    
-      <!-- Роздiл Наша команда team-->
+      <!--  team-->
       
       <section class="team">
         <div class="container">
-        <h2 class="team__title">Наша команда</h2>
+        <h2 class="team__title">Our team</h2>
 
         <ul class="adflex">
           <li class="team__item">
@@ -260,7 +259,7 @@
             />
             
             <div class="about-employees">
-            <h3 class="team__name">Ігор Дем'яненко</h3>
+            <h3 class="team__name">Ihor Demyanenko</h3>
             <p lang="en" class="team__position">Product Designer</p>
             <ul class="social-icons ">
               <li class=" social-icons__item"><a href="" class="social-link">
@@ -305,7 +304,7 @@
              
             />
             <div class="about-employees">
-            <h3 class="team__name">Ольга Рєпіна</h3>
+            <h3 class="team__name">Olga Repina</h3>
             <p lang="en" class="team__position">Frontend Developer</p>
             <ul class="social-icons ">
 
@@ -352,7 +351,7 @@
               
             />
             <div class="about-employees">
-            <h3 class="team__name">Микола Тарасов</h3>
+            <h3 class="team__name">Mykola Tarasov</h3>
             <p lang="en" class="team__position">Marketing</p>
             <ul class="social-icons">
               <li class="social-icons__item"><a href="" class="social-link">
@@ -397,7 +396,7 @@
               
             />
             <div class="about-employees">
-            <h3 class="team__name">Михайло Єрмаков</h3>
+            <h3 class="team__name">Mykhailo Yermakov</h3>
             <p lang="en" class="team__position">UI Designer</p>
             <ul class="social-icons ">
               <li class="social-icons__item"><a href="" class="social-link">
@@ -428,11 +427,11 @@
       </div>
       </section> 
     
-      <!-- Постійні клієнти -->
+      <!-- Regular customers -->
 
       <section class="clients">
         <div class="container">
-         <h2 class="clients__title">Постійні клієнти</h2>
+         <h2 class="clients__title">Regular customers</h2>
         <ul class="clients__list"> 
           <li class="clients__item"><a href="" class="clients__link"><svg class="clients__icon" width="106" height="60">
             <use href="./img/sprite-icon.svg#icon-company1"></use>
@@ -463,18 +462,18 @@
         <ul class="site-footer__list">
           <li class="site-footer__item">
             <a href="https://goo.gl/maps/G1m2EjYJUnUHCnpP9" class="site-footer__link site-footer__link--color"
-              >м. Київ, пр-т Лесі Українки, 26</a
+              >Kyiv, 26 Lesi Ukrainky Ave, 26</a
             >
            
           </li>
           <li class="site-footer__item">
             <a href="mailto:info@devstudio.com"  class="site-footer__link" lang="en"
               >
-              info@devstudio.com</a
+              info@mystudio.com</a
             >
           </li>
           <li class="site-footer__item">
-            <a href="tel:+38961111111" class="site-footer__link">+38 096 111 11 11</a>
+            <a href="tel:+38961111111" class="site-footer__link">+38 096 123 87 11</a>
           </li>
         </ul>
       </address>
@@ -482,7 +481,7 @@
     </div>
 
       <div class="foot-social">
-      <h2 class="foot-social__title">ПРИЄДНУЙТЕСЬ</h2>
+      <h2 class="foot-social__title">Join Us</h2>
       <ul class="foot-social__list">
         <li class=" foot-social__item"><a href="" class="foot-social__link">
           <svg class="foot-social__icon" width="20" height="20" >
@@ -508,7 +507,7 @@
 
         </a></li></ul></div>
       <div class="footer-subscibe">
-        <h2 class="footer-subscibe__title">ПIДПИШИСЬ НА РОЗСИЛКУ</h2>
+        <h2 class="footer-subscibe__title">SUBSCRIBE TO THE NEWSLETTER</h2>
         <form name="form-email" class="footer-subscibe__form">
           <label for="subscription-email">
             <input type="email" name="subscription-email" id="subscription-email" class="footer-subscibe__input" placeholder="E-mail">
@@ -517,7 +516,7 @@
           
         <button type="submit" class="footer-button">
           
-          <div class="footer-button__block"><span class="footer-button__text">Підписатися</span>
+          <div class="footer-button__block"><span class="footer-button__text">Sign up</span>
           <svg width="24" height="24">
           <use href="./img/plane-send.svg#icon-send"></use>
         </svg></div></button>
@@ -538,13 +537,13 @@
     </button>
 
     <ul class="mobile-menu">
-      <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--color" href="" >Студія</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Портфоліо</a></li>
-      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Контакти</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--color" href="" >Studio</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Portfolio</a></li>
+      <li class="mobile-menu__item"><a class="mobile-menu__link " href="">Contacts</a></li>
     </ul>
      
     <ul class="mobile-contacts">
-        <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--color" href="" >+38 096 111 11 11</a></li>
+        <li class="mobile-contacts__item"><a class="mobile-contacts__link mobile-contacts__link--color" href="" >+38 096 123 11 11</a></li>
         <li class="mobile-contacts__item"><a class="mobile-contacts__link " href="">info@devstudio.com</a></li>
     </ul>
 
