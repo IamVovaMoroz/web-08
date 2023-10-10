@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --main-text-colour: #212121;
   --second-text-colour:#FFFFFF;
   --button-text-colour: #2196F3;
@@ -8,6 +8,18 @@
   --button-backgroud-colour: #F5F4FA;
   --filter-border-colour: #EEEEEE;
   --clients-border-colour:#AFB1B8;
+} */
+
+:root {
+  --main-text-colour: #000; /* Black text */
+  --second-text-colour: #fff; /* White text */
+  --button-text-colour: #f00; /* Red button text (adjust as needed) */
+  --article-text-colour: #555; /* A darker shade of gray for article text (adjust as needed) */
+  --secondary-background-colour: #fff; /* White background */
+  --color-rgba: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+  --button-background-colour: #000; /* Black button background */
+  --filter-border-colour: #888; /* A slightly lighter shade of gray for borders (adjust as needed) */
+  --clients-border-colour: #000; /* Black border for client elements (adjust as needed) */
 }
 
 html {
